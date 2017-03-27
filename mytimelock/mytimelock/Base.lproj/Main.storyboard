@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="表盘" translatesAutoresizingMaskIntoConstraints="NO" id="Qq7-s9-VB6">
+                                <rect key="frame" x="38" y="184" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="2Im-jX-2pl"/>
+                                    <constraint firstAttribute="width" constant="300" id="rhC-ZP-7FI"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="时针" translatesAutoresizingMaskIntoConstraints="NO" id="10c-Co-8NU">
+                                <rect key="frame" x="178" y="259" width="20" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="OZV-pI-4Uy"/>
+                                    <constraint firstAttribute="width" constant="20" id="div-ED-fUh"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="分针" translatesAutoresizingMaskIntoConstraints="NO" id="QZf-5h-mwz">
+                                <rect key="frame" x="178" y="259" width="20" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="72i-Wt-fhr"/>
+                                    <constraint firstAttribute="height" constant="150" id="Cb9-3h-IKb"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="秒针" translatesAutoresizingMaskIntoConstraints="NO" id="87O-Sr-Rw4">
+                                <rect key="frame" x="178" y="259" width="20" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="fwi-Iq-Khm"/>
+                                    <constraint firstAttribute="height" constant="120" id="qU7-mD-d67"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QZf-5h-mwz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="COn-oe-o52"/>
+                            <constraint firstItem="87O-Sr-Rw4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-14.5" id="HHC-XV-bS1"/>
+                            <constraint firstItem="QZf-5h-mwz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JnH-jm-bqF"/>
+                            <constraint firstItem="Qq7-s9-VB6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Qgi-dd-WwC"/>
+                            <constraint firstItem="Qq7-s9-VB6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yfz-3L-EWD"/>
+                            <constraint firstItem="10c-Co-8NU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="arv-vY-lIo"/>
+                            <constraint firstItem="87O-Sr-Rw4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dZR-Br-0L2"/>
+                            <constraint firstItem="10c-Co-8NU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x3h-8w-zEz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hourHand" destination="10c-Co-8NU" id="dWk-Pm-vN9"/>
+                        <outlet property="minuteHand" destination="QZf-5h-mwz" id="enU-W7-8hO"/>
+                        <outlet property="secondHand" destination="87O-Sr-Rw4" id="fYi-M4-of6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="分针" width="13" height="80"/>
+        <image name="时针" width="19" height="69"/>
+        <image name="秒针" width="7" height="70"/>
+        <image name="表盘" width="177" height="176"/>
+    </resources>
+</document>
